@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bureau des Cœurs Brisés - Fiche Patient 2358</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F5F7FA;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .header {
+            background-color: #3F88C5;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        .header i {
+            margin-right: 10px;
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .section {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .section-header {
+            color: #3F88C5;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .section-header i {
+            margin-right: 10px;
+        }
+        .form-field {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .form-field label {
+            width: 200px;
+            font-weight: bold;
+        }
+        .form-field input[type="text"],
+        .form-field input[type="date"] {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #CCCCCC;
+            border-radius: 5px;
+        }
+        .form-field input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+        }
+        .footer {
+            text-align: center;
+            color: #333333;
+            font-style: italic;
+            margin-top: 20px;
+            font-size: 14px;
+            padding: 20px;
+        }
+        .patient-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .patient-info img {
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .patient-details {
+            display: flex;
+            flex-direction: column;
+        }
+        .patient-details p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <i class="fas fa-heart-broken"></i>
+        <div>Bureau des Cœurs Brisés - Fiche Patient 2358</div>
+    </div>
+
+    <div class="dashboard">
+        <div class="section">
+            <div class="section-header">
+                <i class="fas fa-clipboard-check"></i>
+                <div>Vérification pré-séance</div>
+            </div>
+            <div class="form-field">
+                <p><strong>Nom du médecin :</strong> Dr BURON Sophia</p>
+            </div>
+            <div class="form-field">
+                <p><strong>Date de la séance :</strong> 13 Février 2025</p>
+            </div>
+            <div class="form-field">
+                <label for="electrocardiogramme">Electrocardiogramme plat</label>
+                <input type="checkbox" id="electrocardiogramme" name="electrocardiogramme">
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-header">
+                <i class="fas fa-user-injured"></i>
+                <div>Dossier du patient</div>
+            </div>
+            <div class="patient-info">
+                <div class="patient-details">
+                    <p><strong>Nom :</strong> Hubert</p>
+                    <p><strong>Prénom :</strong> Louise</p>
+                    <p><strong>Date de naissance :</strong> 23 Juillet 2001</p>
+                    <p><strong>E-mail :</strong> louise.hubert@gmail.com</p>
+                    <p><strong>Téléphone portable :</strong> 06 63 48 20 48 39</p>
+                    <p><strong>Dernière séance :</strong> 6 Février 2025</p>
+                    <p><strong>Médecin traitant :</strong> Dr MARTIN Léo</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-header">
+                <i class="fas fa-heartbeat"></i>
+                <div>État émotionnel – Diagnostic initial</div>
+            </div>
+            <div class="form-field">
+                <label for="motif">Motif de la consultation</label>
+                <input type="text" id="motif" name="motif">
+            </div>
+            <div class="form-field">
+                <label for="symptomes">Symptômes rapportés</label>
+                <input type="text" id="symptomes" name="symptomes">
+            </div>
+            <div class="form-field">
+                <label for="situation">Situation déclenchante</label>
+                <input type="text" id="situation" name="situation">
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-header">
+                <i class="fas fa-chart-line"></i>
+                <div>Analyse émotionnelle</div>
+            </div>
+            <div class="form-field">
+                <label for="niveau_brisure">Niveau de brisure</label>
+                <input type="text" id="niveau_brisure" name="niveau_brisure">
+            </div>
+            <div class="form-field">
+                <label for="taux_resilience">Taux de résilience</label>
+                <input type="text" id="taux_resilience" name="taux_resilience">
+            </div>
+            <div class="form-field">
+                <label for="niveau_attachement">Niveau d’attachement résiduel</label>
+                <input type="text" id="niveau_attachement" name="niveau_attachement">
+            </div>
+            <div class="form-field">
+                <label for="pensees_parasites">Pensées parasites</label>
+                <input type="text" id="pensees_parasites" name="pensees_parasites">
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-header">
+                <i class="fas fa-heart"></i>
+                <div>Observation sensorielle du cœur</div>
+            </div>
+            <div class="form-field">
+                <label for="visualisation_auditive">Visualisation auditive</label>
+                <input type="text" id="visualisation_auditive" name="visualisation_auditive">
+            </div>
+            <div class="form-field">
+                <label for="flash_emotionnel">Flash émotionnel détecté</label>
+                <input type="text" id="flash_emotionnel" name="flash_emotionnel">
+            </div>
+            <div class="form-field">
+                <label for="stabilisation_rythme">Stabilisation du rythme émotionnel</label>
+                <input type="text" id="stabilisation_rythme" name="stabilisation_rythme">
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-header">
+                <i class="fas fa-procedures"></i>
+                <div>Traitement appliqué</div>
+            </div>
+            <div class="form-field">
+                <label for="seances_techniques">Techniques utilisées</label>
+            </div>
+            <div class="form-field">
+                <input type="text" id="seances_techniques" name="seances_techniques">
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-header">
+                <i class="fas fa-calendar-check"></i>
+                <div>Suivi</div>
+            </div>
+            <div class="form-field">
+                <label for="prochaine_seance">Prochaine séance prévue</label>
+                <input type="text" id="prochaine_seance" name="prochaine_seance">
+            </div>
+            <div class="form-field">
+                <label for="recommandations">Recommandations</label>
+            </div>
+            <div class="form-field">
+                <input type="text" id="recommandations" name="recommandations">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        « Sans battement, mais avec dévouement » - Bureau des Cœurs Brisés©
+    </div>
+</body>
+</html>
